@@ -5,6 +5,32 @@ document.addEventListener('DOMContentLoaded', () => {
         header.classList.toggle('scrolled', window.scrollY > 10);
     }, { passive: true });
 
+    // ---- Force mobile logo swap via JS ----
+    function handleMobileLogo() {
+        const desktopLogo = document.querySelector('.logo-desktop');
+        const mobileLogo = document.querySelector('.logo-mobile');
+        if (!desktopLogo || !mobileLogo) return;
+
+        if (window.innerWidth <= 768) {
+            desktopLogo.style.display = 'none';
+            mobileLogo.style.display = 'flex';
+            mobileLogo.style.alignItems = 'center';
+            // Force the image inside mobile logo
+            const mobileImg = mobileLogo.querySelector('img');
+            if (mobileImg) {
+                mobileImg.style.width = '150px';
+                mobileImg.style.height = '50px';
+                mobileImg.style.maxHeight = 'none';
+                mobileImg.style.objectFit = 'contain';
+            }
+        } else {
+            desktopLogo.style.display = '';
+            mobileLogo.style.display = 'none';
+        }
+    }
+    handleMobileLogo();
+    window.addEventListener('resize', handleMobileLogo);
+
     // ---- Mobile menu toggle ----
     const menuToggle = document.getElementById('menuToggle');
     const navLinks = document.getElementById('navLinks');
