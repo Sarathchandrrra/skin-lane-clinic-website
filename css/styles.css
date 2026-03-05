@@ -1166,7 +1166,36 @@ img {
 }
 
 /* ==========================================
-   RESPONSIVE â€” MOBILE
+   RESPONSIVE — TABLET / MOBILE (768px)
+   ========================================== */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .cta-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .map-section {
+        height: 250px;
+    }
+
+    .map-section iframe {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE — SMALL MOBILE (576px)
    ========================================== */
 @media (max-width: 576px) {
     .section-padding {
