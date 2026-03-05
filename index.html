@@ -36,10 +36,13 @@
             <a href="#" class="logo logo-desktop">
                 <img src="LOGO.webp" alt="Skin Lane Clinic Logo" class="logo-img">
             </a>
-            <a href="#" class="logo logo-mobile">
-                <img src="LOGO.webp" alt="Skin Lane Clinic Logo" width="150" height="50"
-                    style="width:150px;height:50px;object-fit:contain;">
-            </a>
+            <!-- RAW MOBILE LOGO: bypasses all widget/component sizing -->
+            <div class="logo-mobile-raw" style="display:none; align-items:center;">
+                <a href="#">
+                    <img src="LOGO.webp" alt="Skin Lane Clinic Logo"
+                        style="height: 55px !important; width: auto !important; max-width: none !important; max-height: none !important; object-fit: contain; margin-left: 15px; display: block;">
+                </a>
+            </div>
 
             <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu" aria-expanded="false">
                 <span></span>

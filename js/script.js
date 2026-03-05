@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---- Force mobile logo swap via JS ----
     function handleMobileLogo() {
         const desktopLogo = document.querySelector('.logo-desktop');
-        const mobileLogo = document.querySelector('.logo-mobile');
+        const mobileLogo = document.querySelector('.logo-mobile-raw');
         if (!desktopLogo || !mobileLogo) return;
 
         if (window.innerWidth <= 768) {
@@ -18,10 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // Force the image inside mobile logo
             const mobileImg = mobileLogo.querySelector('img');
             if (mobileImg) {
-                mobileImg.style.width = '150px';
-                mobileImg.style.height = '50px';
+                mobileImg.style.width = 'auto';
+                mobileImg.style.height = '55px';
                 mobileImg.style.maxHeight = 'none';
+                mobileImg.style.maxWidth = 'none';
                 mobileImg.style.objectFit = 'contain';
+                mobileImg.style.marginLeft = '15px';
             }
         } else {
             desktopLogo.style.display = '';

@@ -276,7 +276,7 @@ img {
 }
 
 /* Mobile logo: hidden by default on desktop */
-.logo-mobile {
+.logo-mobile-raw {
     display: none !important;
 }
 
@@ -1187,7 +1187,7 @@ img {
         display: none !important;
     }
 
-    .logo-mobile {
+    .logo-mobile-raw {
         display: flex !important;
         align-items: center;
     }
@@ -1253,7 +1253,7 @@ img {
         display: none !important;
     }
 
-    .logo-mobile {
+    .logo-mobile-raw {
         display: flex !important;
         align-items: center;
     }
