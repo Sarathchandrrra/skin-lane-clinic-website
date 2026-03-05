@@ -275,6 +275,11 @@ img {
     object-fit: contain;
 }
 
+/* Mobile logo: hidden by default on desktop */
+.logo-mobile {
+    display: none !important;
+}
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -1174,20 +1179,17 @@ img {
     }
 
     .header-inner {
-        height: 75px;
+        height: 70px;
     }
 
-    .logo {
-        height: 50px !important;
-        display: flex;
+    /* Hide desktop logo, show mobile logo */
+    .logo-desktop {
+        display: none !important;
+    }
+
+    .logo-mobile {
+        display: flex !important;
         align-items: center;
-    }
-
-    .logo-img {
-        height: 50px !important;
-        width: auto !important;
-        max-height: none !important;
-        object-fit: contain;
     }
 
     .cta-inner {
@@ -1243,20 +1245,17 @@ img {
     }
 
     .header-inner {
-        height: 70px;
+        height: 65px;
     }
 
-    .logo {
-        height: 50px !important;
-        display: flex;
+    /* Ensure mobile logo is visible, desktop logo hidden */
+    .logo-desktop {
+        display: none !important;
+    }
+
+    .logo-mobile {
+        display: flex !important;
         align-items: center;
-    }
-
-    .logo-img {
-        height: 50px !important;
-        width: auto !important;
-        max-height: none !important;
-        object-fit: contain;
     }
 
     .hero {
