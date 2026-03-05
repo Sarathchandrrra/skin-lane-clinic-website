@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const mobileImg = mobileLogo.querySelector('img');
             if (mobileImg) {
                 mobileImg.style.width = 'auto';
-                mobileImg.style.height = '55px';
+                mobileImg.style.height = '110px';
                 mobileImg.style.maxHeight = 'none';
                 mobileImg.style.maxWidth = 'none';
                 mobileImg.style.objectFit = 'contain';

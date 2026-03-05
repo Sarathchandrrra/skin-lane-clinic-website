@@ -1179,7 +1179,7 @@ img {
     }
 
     .header-inner {
-        height: 70px;
+        height: 120px;
     }
 
     /* Hide desktop logo, show mobile logo */
@@ -1245,7 +1245,7 @@ img {
     }
 
     .header-inner {
-        height: 65px;
+        height: 120px;
     }
 
     /* Ensure mobile logo is visible, desktop logo hidden */
