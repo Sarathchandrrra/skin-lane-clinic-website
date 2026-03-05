@@ -1173,6 +1173,15 @@ img {
         padding: 0 20px;
     }
 
+    .header-inner {
+        height: 75px;
+    }
+
+    .logo-img {
+        height: 50px;
+        width: auto;
+    }
+
     .cta-inner {
         flex-direction: column;
         text-align: center;
@@ -1226,11 +1235,11 @@ img {
     }
 
     .header-inner {
-        height: 60px;
+        height: 70px;
     }
 
     .logo-img {
-        height: 38px;
+        height: 48px;
     }
 
     .hero {
