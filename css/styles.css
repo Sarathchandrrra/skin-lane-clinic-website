@@ -1177,9 +1177,17 @@ img {
         height: 75px;
     }
 
+    .logo {
+        height: 50px !important;
+        display: flex;
+        align-items: center;
+    }
+
     .logo-img {
         height: 50px !important;
         width: auto !important;
+        max-height: none !important;
+        object-fit: contain;
     }
 
     .cta-inner {
@@ -1238,9 +1246,17 @@ img {
         height: 70px;
     }
 
+    .logo {
+        height: 50px !important;
+        display: flex;
+        align-items: center;
+    }
+
     .logo-img {
-        height: 45px !important;
+        height: 50px !important;
         width: auto !important;
+        max-height: none !important;
+        object-fit: contain;
     }
 
     .hero {
